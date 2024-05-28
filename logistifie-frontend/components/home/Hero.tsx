@@ -1,5 +1,6 @@
 import { LuPhone } from "react-icons/lu";
 import { MdOutlineMail } from "react-icons/md";
+import { SearchRide } from "./SearchRide";
 
 export const Hero = () => {
   return (
@@ -12,9 +13,7 @@ export const Hero = () => {
           <p className="text-base">
             Your exclusive and dependable chauffeur service indulgence
           </p>
-          <div className="absolute h-[560px] w-[488px] rounded-lg top-10 right-16 bg-custom-gradient backdrop-blur-sm shadow-custom-shadow p-4">
-            <p>Hello</p>
-          </div>
+          <SearchRide />
         </div>
         <div>
           <p>Do you want to customise your booking?</p>
