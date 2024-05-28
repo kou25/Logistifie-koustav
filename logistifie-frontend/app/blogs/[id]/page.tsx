@@ -9,7 +9,8 @@ import { SlCalender } from "react-icons/sl";
 
 async function getBlogById(id: number) {
   try {
-    const response = await axios.get(`http://localhost:4000/api/blogs/${id}`);
+    const api = process.env.API_URL || "http://localhost:4000/api";
+    const response = await axios.get(`${api}/blogs/${id}`);
     return response.data;
   } catch (error) {
     if (axios.isAxiosError(error) && error.response?.status === 404) {

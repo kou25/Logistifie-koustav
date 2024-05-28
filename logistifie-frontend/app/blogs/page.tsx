@@ -3,7 +3,8 @@ import { BlogPost } from "@/utils/types";
 import axios from "axios";
 
 async function getBlogs() {
-  const response = await axios.get("http://localhost:4000/api/blogs");
+  const api = process.env.API_URL || "http://localhost:4000/api";
+  const response = await axios.get(`${api}/blogs`);
   return response.data;
 }
 
