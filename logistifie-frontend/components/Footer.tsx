@@ -5,6 +5,8 @@ import { FiFacebook } from "react-icons/fi";
 import { FaPinterestP, FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
 import { ImLinkedin2 } from "react-icons/im";
+import Image from "next/image";
+import { Input } from "./Input";
 
 export const Footer = () => {
   return (
@@ -40,25 +42,10 @@ export const Footer = () => {
           </div>
         </div>
         <div className="w-8/12 px-10">
-          <div className="flex flex-col justify-between mb-3">
-            <label className="text-xs mb-1 text-lf-25 font-thin">
-              First Name
-            </label>
-            <input
-              className="h-8 rounded-md p-2 border border-lf-200 bg-lf-300 text-sm"
-              placeholder="Enter First Name"
-            />
-          </div>
-          <div className="flex flex-col justify-between mb-5">
-            <label className="text-xs mb-1 text-lf-25 font-thin">
-              Last Name
-            </label>
-            <input
-              className="h-8   rounded-md p-2 border border-lf-200 bg-lf-300 text-sm"
-              placeholder="Enter Last Name"
-            />
-          </div>
-          <div>
+          <Input label="First Name" placeholder="Enter First Name" />
+          <Input label="Last Name" placeholder="Enter Last Name" />
+
+          <div className="mt-5">
             <Button
               label="Submit"
               bgColor="bg-lf-100"
