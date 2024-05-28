@@ -54,42 +54,48 @@ export const WorksAndServices = () => {
       <div className=" container py-8  mx-auto">
         <div className="flex  items-center flex-col mt-12 text-lf-25">
           <p className="text-sm">How it Works</p>
-          <p className="text-3xl">
+          <p className="text-lg text-center md:text-left md:text-3xl">
             Book Your Chauffeur Experience in Three Simple Steps
           </p>
           <div className="mt-1 w-10 h-[1px] rounded-lg bg-lf-25" />
-          <div className="flex justify-between mt-12 text-lf-25 w-10/12">
-            <div className="w-1/5 flex flex-col items-center">
+          <div className="flex justify-between mt-12 text-lf-25 w-11/12 md:w-10/12">
+            <div className="w-1/3 md:w-1/5 flex flex-col items-center">
               <div className="bg-lf-400 rounded-md h-24 w-24 flex justify-center items-center">
                 <BiDetail className="text-3xl" />
               </div>
-              <p className="mt-4 mb-2">Enter Trip Details</p>
+              <p className="mt-4 mb-2 text-sm lg:text-base">
+                Enter Trip Details
+              </p>
               <p className="text-xs text-center">
                 Enter your destination, select your date and time, and explore
                 our fleet
               </p>
             </div>
-            <div className="w-[15%] flex flex-col justify-center items-center">
+            <div className="w-[10%] lg:w-[15%] hidden md:flex flex-col justify-center items-center">
               <Image src="/arrow.png" alt="hero" width={200} height={10} />
             </div>
-            <div className="w-1/5 flex flex-col items-center">
+            <div className="w-1/3 md:w-1/5 flex flex-col items-center">
               <div className="bg-lf-400 rounded-md h-24 w-24 flex justify-center items-center">
                 <FaCar className="text-3xl" />
               </div>
-              <p className="mt-4 mb-2">Vehicle Of Choice</p>
+              <p className="mt-4 mb-2 text-sm lg:text-base">
+                Vehicle Of Choice
+              </p>
               <p className="text-xs text-center">
                 Choose from our extensive fleet for a vehicle that suits you
                 best
               </p>
             </div>
-            <div className="w-[15%] flex flex-col justify-center items-center">
+            <div className="w-[10%] lg:w-[15%] hidden md:flex flex-col justify-center items-center">
               <Image src="/arrow.png" alt="hero" width={200} height={10} />
             </div>
-            <div className="w-1/5 flex flex-col items-center">
+            <div className="w-1/3 md:w-1/5 flex flex-col items-center">
               <div className="bg-lf-400 rounded-md h-24 w-24 flex justify-center items-center">
                 <FiCheckCircle className="text-3xl" />
               </div>
-              <p className="mt-4 mb-2">Confirm Your Ride</p>
+              <p className="mt-4 mb-2 text-sm lg:text-base">
+                Confirm Your Ride
+              </p>
               <p className="text-xs text-center">
                 The final stage to your booking process where you confirm the
                 ride.
@@ -100,7 +106,7 @@ export const WorksAndServices = () => {
         <div className="my-20 w-full h-[0.5px] rounded-lg bg-lf-200" />
         <div className="flex  items-center flex-col mt-12 text-lf-25">
           <p className="text-sm">Our Services</p>
-          <p className="text-3xl">
+          <p className="text-lg md:text-3xl">
             Tailored Chauffeur Services for Your Every Need
           </p>
           <div className="mt-1 w-10 h-[1px] rounded-lg bg-lf-25" />
@@ -113,7 +119,7 @@ export const WorksAndServices = () => {
             perfection. Browse our services now and elevate your transportation
             experience with our exclusive chauffeur services.
           </p>
-          <div className="grid grid-cols-3 gap-8 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
             {services.map((service) => (
               <div
                 key={service.id}

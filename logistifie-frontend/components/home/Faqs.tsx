@@ -102,8 +102,8 @@ const allFaqs = [
 
 export const Faqs = () => {
   return (
-    <section className="bg-lf-600 p-12">
-      <div className="container p-4 mx-auto">
+    <section className="bg-lf-600 p-1 md:p-12">
+      <div className="container p-1 md:p-4 mx-auto">
         <div className="flex  items-center flex-col mt-4 text-lf-25">
           <p className="text-sm ">Have queries?</p>
           <p className="text-2xl">Frequent Asked Questions</p>

@@ -6,7 +6,7 @@ export const Analytics = () => {
     { id: 4, name: "Business Partners", value: "150+" }
   ];
   return (
-    <section className="bg-lf-400 h-40 py-4 px-28 flex justify-between items-center text-lf-25">
+    <section className="bg-lf-400 h-40 py-4 px-4 md:px-28 flex justify-between items-center text-lf-25">
       {analiticsData.map((data) => (
         <div
           key={data.id}
@@ -16,7 +16,9 @@ export const Analytics = () => {
               : ""
           }`}
         >
-          <p className="text-xl font-bold leading-4">{data.value}</p>
+          <p className="text-xl font-bold leading-4 mb-2 lg:mb-0">
+            {data.value}
+          </p>
           <p className="text-sm font-thin">{data.name}</p>
         </div>
       ))}

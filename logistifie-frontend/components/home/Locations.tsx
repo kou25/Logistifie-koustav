@@ -12,14 +12,14 @@ export const Locations = () => {
   ];
   return (
     <section className="bg-lf-200">
-      <div className="container p-12  mx-auto">
+      <div className="container p-2 md:p-8 lg:p-12  mx-auto">
         <div className="flex  items-center flex-col mt-4 text-lf-25">
           <p className="text-sm text-[#828282]">Our Presence</p>
           <p className="text-2xl">Locations we serve</p>
           <div className="mt-1 w-10 h-[1px] rounded-lg bg-lf-25" />
         </div>
-        <div className="flex justify-between items-center my-6">
-          <div className="w-10 h-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:flex  justify-between items-center my-6">
+          <div className="hidden lg:block w-10 h-10">
             <Image
               src={"/left.png"}
               alt={"left"}
@@ -30,7 +30,7 @@ export const Locations = () => {
             />
           </div>
           {locations.map((item) => (
-            <div key={item.name}>
+            <div key={item.name} className="mb-2">
               <div className="w-48 h-48">
                 <Image
                   src={item.image}
@@ -56,7 +56,7 @@ export const Locations = () => {
               </div>
             </div>
           ))}
-          <div className="w-10 h-10">
+          <div className="block w-10 h-10">
             <Image
               src={"/right.png"}
               alt={"right"}
@@ -67,8 +67,8 @@ export const Locations = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between items-center my-6">
-          <div className="text-lf-25 w-3/6">
+        <div className="flex flex-col md:flex-row justify-between md:items-center my-6">
+          <div className="text-lf-25 w-full md:w-3/6">
             <h3 className="text-2xl mb-6">Looking for more locations?</h3>
             <p className="text-sm">
               Explore our expanding locations and book your customized trip,
@@ -77,16 +77,16 @@ export const Locations = () => {
             <div className="mt-6 flex items-center text-lf-50">
               <div className="flex items-center ">
                 <LuPhone className="mr-2" />
-                <p className="text-sm mr-4 ">+44 (0) 207 112 8101</p>
+                <p className="text-xs lg:text-sm mr-4 ">+44 (0) 207 112 8101</p>
               </div>
               <span className="mr-2 text-lf-25">|</span>
               <div className="flex items-center ">
                 <MdOutlineMail className="mr-2" />
-                <p className="text-sm mr-4 ">booking@roldrive.com</p>
+                <p className="text-xs lg:text-sm mr-4 ">booking@roldrive.com</p>
               </div>
             </div>
           </div>
-          <div className="w-2/5 h-auto">
+          <div className=" w-full md:w-2/5 h-auto">
             <Image
               src={"/map.png"}
               alt={"map"}

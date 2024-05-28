@@ -10,15 +10,15 @@ import { Input } from "./Input";
 
 export const Footer = () => {
   return (
-    <footer className="bg-lf-600 p-20 px-28">
-      <div className="flex justify-center items-center flex-col text-lf-25 mb-6">
+    <footer className="bg-lf-600 p-20 px-5  lg:px-28">
+      <div className="flex justify-center md:items-center flex-col text-lf-25 mb-6">
         <p className="font-thin text-sm">Let’s get in touch!</p>
         <p className="font-medium text-xl">
           Contact us for quick and friendly support.
         </p>
         <div className="mt-1 w-10 h-[1px] rounded-lg bg-lf-25" />
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <div className="mb-6 ">
             <div className="flex items-center text-lf-50 mb-2">
@@ -30,7 +30,7 @@ export const Footer = () => {
               <p className="text-sm mr-4 ">booking@roldrive.com</p>
             </div>
           </div>
-          <div className="text-lf-25 w-3/12">
+          <div className="text-lf-25 w-1/2 lg:w-3/12">
             <p className="text-lg font-thin">Connect with us</p>
             <div className="mt-2 flex justify-between mr-2">
               <FiFacebook />
@@ -41,7 +41,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-8/12 px-10">
+        <div className="w-full lg:w-8/12  px-1 md:px-10">
           <Input label="First Name" placeholder="Enter First Name" />
           <Input label="Last Name" placeholder="Enter Last Name" />
 

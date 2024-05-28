@@ -6,7 +6,7 @@ import { Button } from "../Button";
 
 export const SearchRide = () => {
   return (
-    <div className="absolute h-[520px] w-[488px] rounded-lg top-10 right-16 bg-custom-gradient backdrop-blur-sm shadow-custom-shadow p-8">
+    <div className="absolute h-[500px] lg:h-[520px] w-[400px] lg:w-[488px] rounded-lg top-20 lg:top-10 right-0 md:right-2 lg:right-16 bg-custom-gradient backdrop-blur-sm shadow-custom-shadow p-8">
       <div className="flex justify-between items-center">
         <div className="w-1/2 bg-[#223544] cursor-pointer text-sm rounded-2xl border border-lf-300 flex justify-center items-center p-1.5 mr-2">
           <PiPathBold className="mr-2" /> Transfer

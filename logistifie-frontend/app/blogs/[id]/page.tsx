@@ -25,12 +25,14 @@ export default async function Page({ params }: { params: { id: number } }) {
   return (
     <section className="flex-1 flex flex-col  p-4 my-2 container mx-auto">
       <Link href={"/blogs"} className="flex items-center mb-2 text-lf-50">
-        <FaCircleArrowLeft className="text-sm mr-2" />
-        <p className="text-sm font-semibold">Go Back</p>
+        <FaCircleArrowLeft className="text-xs md:text-sm mr-2" />
+        <p className="text-xs md:text-sm font-semibold">Go Back</p>
       </Link>
-      <div className="grid grid-cols-3 gap-4">
-        <div className="col-span-2   ">
-          <p className="text-5xl border-b border-lf-300 pb-4 ">{blog.title}</p>
+      <div className="grid grid-1 lg:grid-cols-3 gap-4">
+        <div className="col-span-1 lg:col-span-2   ">
+          <p className="text-xl md:text-5xl border-b border-lf-300 pb-4 ">
+            {blog.title}
+          </p>
           <div className="mt-4  px-4">
             <div>
               <Image
@@ -42,7 +44,7 @@ export default async function Page({ params }: { params: { id: number } }) {
                 className="rounded-lg w-full h-auto object-cover"
               />
             </div>
-            <div className="mt-4">
+            <div className="text-xs md:text-base mt-4">
               <p>{blog.summary}</p>
             </div>
           </div>
@@ -50,12 +52,12 @@ export default async function Page({ params }: { params: { id: number } }) {
         <div>
           <div className="bg-lf-500 p-8 rounded-lg ">
             <div className="flex items-center  mt-1">
-              <FaCircleUser className="mr-4 text-lg" />
-              <p className="text-lg text-gray-200">Admin</p>
+              <FaCircleUser className="mr-4 text-sm md:text-lg" />
+              <p className="text-sm md:text-lg text-gray-200">Admin</p>
             </div>
             <div className="flex items-center  mt-1">
-              <SlCalender className="mr-4 text-lg" />
-              <p className="text-lg text-gray-200">
+              <SlCalender className="mr-4 text-sm md:text-lg" />
+              <p className="text-sm md:text-lg text-gray-200">
                 {moment(blog.publication_date).format("LL")}
               </p>
             </div>

@@ -17,10 +17,10 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 }) => {
   return (
     <div
-      className="mb-4 rounded-lg bg-lf-500 p-4 w-[70vw] text-lf-25 cursor-pointer"
+      className="mb-4 rounded-lg bg-lf-500 p-2 md:p-4 w-full md:w-[70vw] text-lf-25 cursor-pointer"
       onClick={onClick}
     >
-      <div className="flex justify-between items-center p-4 focus:outline-none w-full">
+      <div className="flex justify-between items-center p-2 md:p-4 focus:outline-none w-full">
         <span className="text-base">{title}</span>
         <span>{isOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
       </div>

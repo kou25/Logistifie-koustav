@@ -7,10 +7,12 @@ export const PopularTrips = () => {
       <div className="container p-12 my-16  mx-auto">
         <div className="flex  items-center flex-col mt-4 text-lf-25">
           <p className="text-sm ">Popular trips</p>
-          <p className="text-2xl">Explore Our Most Sought-After Destinations</p>
+          <p className="text-2xl mb-1">
+            Explore Our Most Sought-After Destinations
+          </p>
           <div className="mt-1 w-10 h-[1px] rounded-lg bg-lf-25" />
         </div>
-        <div className="grid grid-cols-4 gap-4 mt-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
             <div
               key={item}

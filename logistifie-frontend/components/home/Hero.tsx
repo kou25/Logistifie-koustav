@@ -4,13 +4,13 @@ import { SearchRide } from "./SearchRide";
 
 export const Hero = () => {
   return (
-    <section className="w-screen h-[700px]  bg-hero bg-no-repeat bg-cover bg-center px-10 mt-2">
-      <div className="flex flex-col justify-between  h-full mx-16 pb-8 pt-4">
+    <section className="w-screen h-[80vh] md:h-[700px]  bg-hero bg-no-repeat bg-cover bg-center px:2 lg:px-10 mt-2">
+      <div className="flex flex-col justify-between  h-full mx-4 lg:mx-16 pb-8 pt-4">
         <div className="relative">
-          <h1 className="text-5xl text-white font-bold mb-1">
+          <h1 className="textlg md:text-2xl lg:text-5xl text-white font-bold mb-1">
             Premium Chauffeur Service
           </h1>
-          <p className="text-base">
+          <p className="text-sm md:text-base">
             Your exclusive and dependable chauffeur service indulgence
           </p>
           <SearchRide />
@@ -21,7 +21,7 @@ export const Hero = () => {
             We offer customised bookings for any location, from bulk or
             intercity trips to monthly packages.
           </p>
-          <div className="flex items-center mt-2">
+          <div className="flex flex-col md:flex-row items-start md:items-center mt-2">
             <small className="mr-4 text-sm font-thin">Contact us now</small>
             <div className="flex items-center text-lf-50">
               <LuPhone className="mr-2" />

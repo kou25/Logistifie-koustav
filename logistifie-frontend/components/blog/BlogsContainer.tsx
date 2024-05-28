@@ -21,8 +21,10 @@ export const BlogsContainer = ({ blogs }: { blogs: BlogPost[] }) => {
   };
 
   const filteredBlogs = useMemo(() => {
-    return blogs.filter((blog) =>
-      blog.title.toLowerCase().includes(searchTerm.toLowerCase())
+    return blogs.filter(
+      (blog) =>
+        blog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        blog.summary.toLowerCase().includes(searchTerm.toLowerCase())
     );
   }, [blogs, searchTerm]);
 
@@ -33,7 +35,7 @@ export const BlogsContainer = ({ blogs }: { blogs: BlogPost[] }) => {
           <SearchBar onSearch={handleSearchChange} />
         </div>
         {filteredBlogs.length > 0 ? (
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {filteredBlogs.map((blog: BlogPost) => (
               <BlogItem blog={blog} key={blog.id} />
             ))}
