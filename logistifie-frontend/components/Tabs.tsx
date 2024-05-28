@@ -23,7 +23,7 @@ const Tabs: FC<TabsProps> = ({ children }) => {
 
   return (
     <div className=" mx-auto flex flex-col items-center">
-      <div className="flex  min-w-full lg:min-w-[40vw]">
+      <div className="flex  min-w-full lg:min-w-[50vw]">
         {children.map((child) => (
           <button
             key={child.props.label}
@@ -51,11 +51,7 @@ const Tabs: FC<TabsProps> = ({ children }) => {
 };
 
 const Tab: FC<TabProps> = ({ label, children }) => {
-  return (
-    <div data-label={label} className="hidden">
-      {children}
-    </div>
-  );
+  return <div data-label={label}>{children}</div>;
 };
 
 export { Tabs, Tab };
