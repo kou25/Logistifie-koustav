@@ -1,6 +1,7 @@
 import { Analytics } from "@/components/home/Analytics";
 import { DownloadApp } from "@/components/home/DownloadApp";
 import { Hero } from "@/components/home/Hero";
+import { Locations } from "@/components/home/Locations";
 import { WorksAndServices } from "@/components/home/WorksAndServices";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <DownloadApp />
       <Analytics />
       <WorksAndServices />
+      <Locations />
     </main>
   );
 }
