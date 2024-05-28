@@ -8,7 +8,7 @@ import { ImLinkedin2 } from "react-icons/im";
 
 export const Footer = () => {
   return (
-    <footer className="bg-lg-600 p-20 px-28">
+    <footer className="bg-lf-600 p-20 px-28">
       <div className="flex justify-center items-center flex-col text-lf-25 mb-6">
         <p className="font-thin text-sm">Let’s get in touch!</p>
         <p className="font-medium text-xl">
