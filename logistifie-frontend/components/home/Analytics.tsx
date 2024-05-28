@@ -6,11 +6,11 @@ export const Analytics = () => {
     { id: 4, name: "Business Partners", value: "150+" }
   ];
   return (
-    <section className="bg-lf-400 h-40 py-4 px-8 flex justify-evenly items-center text-lf-25">
+    <section className="bg-lf-400 h-40 py-4 px-28 flex justify-between items-center text-lf-25">
       {analiticsData.map((data) => (
         <div
           key={data.id}
-          className={`flex flex-col ${
+          className={`flex flex-col w-2/12 ${
             data.id !== analiticsData.length
               ? "border-r-[0.5px] border-lf-300 pr-10"
               : ""
