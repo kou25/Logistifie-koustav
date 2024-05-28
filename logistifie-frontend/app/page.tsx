@@ -1,5 +1,6 @@
 import { Analytics } from "@/components/home/Analytics";
 import { DownloadApp } from "@/components/home/DownloadApp";
+import { Faqs } from "@/components/home/Faqs";
 import { Fleet } from "@/components/home/Fleet";
 import { Hero } from "@/components/home/Hero";
 import { Locations } from "@/components/home/Locations";
@@ -16,6 +17,7 @@ export default function Home() {
       <Locations />
       <Fleet />
       <PopularTrips />
+      <Faqs />
     </main>
   );
 }
