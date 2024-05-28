@@ -29,7 +29,7 @@ const Tabs: FC<TabsProps> = ({ children }) => {
             key={child.props.label}
             className={`${
               activeTab === child.props.label
-                ? "border-b-2 border-lf-100"
+                ? "border-b border-lf-100"
                 : "border-b border-gray-300"
             } flex-1 text-lf-25 text-xs font-medium py-2`}
             onClick={(e) => handleClick(e, child.props.label)}
