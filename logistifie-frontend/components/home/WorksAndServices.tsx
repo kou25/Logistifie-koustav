@@ -112,7 +112,7 @@ export const WorksAndServices = () => {
           <div className="mt-1 w-10 h-[1px] rounded-lg bg-lf-25" />
           <p className="mt-8 text-sm text-center w-10/12">
             Indulge in an unparalleled chauffeur experience with our tailored
-            services designed to meet your unique requirements. Whether you're
+            services designed to meet your unique requirements. Whether you are
             in pursuit of seamless airport transfers, corporate travel, or
             special events, our chauffeur services are crafted to elevate your
             journey. Embark on a journey where every detail is tailored to
